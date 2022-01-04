@@ -24,6 +24,11 @@
     float: right;
 }
 
+#redes-sociais ul
+{
+    padding-top: 10px;
+}
+
 #redes-sociais ul li 
 {
     width: 25px;
