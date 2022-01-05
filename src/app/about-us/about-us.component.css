@@ -1,0 +1,129 @@
+h2, h4, p
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2
+{
+    font-weight: 900;
+    color: gold;
+}
+
+h4
+{
+    font-weight: 900;
+}
+
+.vertical
+{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.secao
+{
+    background-color: white;
+    width: 100%;
+    padding: calc(5% + 30px) 0px;
+}
+
+.imagem
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem img
+{
+    width: 100%;
+    transition: transform .3s;
+}
+
+.imagem:hover img
+{
+    transform: scale(1.2);
+}
+
+.imagem::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.cabecalho
+{
+    font-size: 28px;
+}
+
+.linha-efeito
+{
+    width: 80px;
+    height: 3px;
+    background-color: gold;
+}
+
+.texto
+{
+    font-size: 16px;
+}
+
+.caixa
+{
+    background-color: gold;
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caixa i
+{
+    font-size: 42px;
+}
+
+.caixa h4
+{
+    font-size: 14px;
+}
+
+.caixa p
+{
+    font-size: 22px;
+}
+
+.caixa::after,
+.caixa::before
+{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    transition: transform .3s;
+}
+
+.caixa::after
+{
+    left: -50px;
+    top: -50px;
+}
+
+.caixa::before
+{
+    right: -50px;
+    bottom: -50px;
+}
+
+.caixa:hover::after,
+.caixa:hover::before
+{
+    transform: scale(1.2);
+}

@@ -1,15 +1,15 @@
 #principal
 {
     background-color: orange;
-    height: 150px;
+    height: 152px;
     border-bottom: 2px solid blue;
 }
 
 #logo
 {
+    padding-top: 0;
     float: left;
-    padding: 16px;
-    width: 30%;
+    width: 17%;
 }
 
 #logo img
@@ -40,6 +40,7 @@
 
 #menu
 {
+    width: 1000px;
     padding-top: 70px;
 }
 
@@ -54,7 +55,8 @@
 {
     color: blue;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #menu ul li:hover
